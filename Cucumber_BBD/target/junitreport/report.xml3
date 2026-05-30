@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="7.605" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="TutorialsNinja E-Commerce End-to-End Flow" name="Successful E2E purchase cycle from login to checkout - Example #1.1" time="7.266">
+<failure type="io.cucumber.core.runner.AmbiguousStepDefinitionsException" message="&quot;click on email address field and add valid email &quot;tapa@gmail.com&quot;&quot; matches more than one step definition:
+  &quot;^click on email address field and add valid email &quot;([^&quot;]*)&quot;$&quot; in StepDefination.Ninja_E2E.click_on_email_address_field(java.lang.String,java.lang.String)
+  &quot;click on email address field and add valid email {string}&quot; in StepDefination.Ninja_Login.click_on_email_address_field_and_add_valid_email_tapa_gmail_com(java.lang.String)">
+<![CDATA[io.cucumber.core.runner.AmbiguousStepDefinitionsException: "click on email address field and add valid email "tapa@gmail.com"" matches more than one step definition:
+  "^click on email address field and add valid email "([^"]*)"$" in StepDefination.Ninja_E2E.click_on_email_address_field(java.lang.String,java.lang.String)
+  "click on email address field and add valid email {string}" in StepDefination.Ninja_Login.click_on_email_address_field_and_add_valid_email_tapa_gmail_com(java.lang.String)
+	at io.cucumber.core.runner.CachingGlue.findStepDefinitionMatch(CachingGlue.java:406)
+	at io.cucumber.core.runner.CachingGlue.stepDefinitionMatch(CachingGlue.java:374)
+	at io.cucumber.core.runner.Runner.matchStepToStepDefinition(Runner.java:183)
+	at io.cucumber.core.runner.Runner.createTestStepsForPickleSteps(Runner.java:163)
+	at io.cucumber.core.runner.Runner.createTestCaseForPickle(Runner.java:146)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:74)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+]]>
+</failure>
+<system-out><![CDATA[
+Given login page should be open in default browser..........................passed
+When click on email address field and add valid email "tapa@gmail.com"......ambiguous
+And then click on password field and enter valid "admin@123"................skipped
+And now click on login button "success".....................................skipped
+Then login successfully and redirect to ninja home page.....................skipped
+When ninja search input field receives "MacBook"............................skipped
+Then ninja custom product list matches criteria.............................skipped
+When user clicks on add to cart button for the item.........................skipped
+Then product should be added to cart successfully...........................skipped
+When user clicks on the black shopping cart button..........................skipped
+And user updates the item quantity in the cart view.........................skipped
+And clicks on the checkout option...........................................skipped
+Then user should be redirected to the checkout page.........................skipped
+And user logs out from the application......................................skipped
+]]></system-out>
+</testcase>
+</testsuite>

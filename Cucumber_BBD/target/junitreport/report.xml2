@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="52.76" tests="7" skipped="0" failures="0" errors="0">
+<testcase classname="verify ninja add to cart functionality" name="verify add to cart button - Example #1.1" time="13.118">
+<system-out><![CDATA[
+Given login page should be open in default browser..........................passed
+When click on email address field and add valid email "tapa@gmail.com"......passed
+And then click on password field and enter valid "admin@123"................passed
+And now click on login button "success".....................................passed
+Then login successfully and redirect to ninja home page.....................passed
+And ninja search input field receives "iphone"..............................passed
+Then ninja custom product list matches criteria.............................passed
+When user clicks on add to cart button for the item.........................passed
+Then product should be added to cart successfully...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="verify ninja cart checkout functionality" name="verify cart button - Example #1.1" time="14.613">
+<system-out><![CDATA[
+Given login page should be open in default browser..........................passed
+When click on email address field and add valid email "tapa@gmail.com"......passed
+And then click on password field and enter valid "admin@123"................passed
+And now click on login button "success".....................................passed
+Then login successfully and redirect to ninja home page.....................passed
+And ninja search input field receives "iphone"..............................passed
+Then ninja custom product list matches criteria.............................passed
+When user clicks on add to cart button for the item.........................passed
+Then product should be added to cart successfully...........................passed
+When user clicks on the black shopping cart button..........................passed
+And clicks on the checkout option...........................................passed
+Then user should be redirected to the checkout page.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="verify Login functionnality" name="Verify login page - Example #1.1" time="4.372">
+<system-out><![CDATA[
+Given login page should be open in default browser..........................passed
+When click on email address field and add valid email "tapa@gmail.com"......passed
+And then click on password field and enter valid "admin@123"................passed
+And now click on login button "success".....................................passed
+Then login successfully and redirect to ninja home page.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="verify Login functionnality" name="Verify login page - Example #1.2" time="3.584">
+<system-out><![CDATA[
+Given login page should be open in default browser..........................passed
+When click on email address field and add valid email "iausih"..............passed
+And then click on password field and enter valid "password".................passed
+And now click on login button "fail"........................................passed
+Then login successfully and redirect to ninja home page.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="verify Login functionnality" name="Verify login page - Example #1.3" time="3.604">
+<system-out><![CDATA[
+Given login page should be open in default browser..........................passed
+When click on email address field and add valid email "username"............passed
+And then click on password field and enter valid "asdad"....................passed
+And now click on login button "fail"........................................passed
+Then login successfully and redirect to ninja home page.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="verify ninja search functionality" name="verify search buttons - Example #1.1" time="6.541">
+<system-out><![CDATA[
+Given login page should be open in default browser..........................passed
+When click on email address field and add valid email "tapa@gmail.com"......passed
+And then click on password field and enter valid "admin@123"................passed
+And now click on login button "success".....................................passed
+Then login successfully and redirect to ninja home page.....................passed
+And ninja search input field receives "iphone"..............................passed
+Then ninja custom product list matches criteria.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="verify ninja search functionality" name="verify search buttons - Example #1.2" time="6.727">
+<system-out><![CDATA[
+Given login page should be open in default browser..........................passed
+When click on email address field and add valid email "tapa@gmail.com"......passed
+And then click on password field and enter valid "admin@123"................passed
+And now click on login button "success".....................................passed
+Then login successfully and redirect to ninja home page.....................passed
+And ninja search input field receives "pay".................................passed
+Then ninja custom product list matches criteria.............................passed
+]]></system-out>
+</testcase>
+</testsuite>
