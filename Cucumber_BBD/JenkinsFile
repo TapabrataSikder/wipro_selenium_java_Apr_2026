@@ -6,15 +6,19 @@ pipeline {
     }
  
     stages {
- 
-        stage('Checkout') {
+        // Notice: We completely removed the manual Git checkout stage 
+        // because Jenkins already auto-downloads the whole repository!
+
+        stage('Build Dependency') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/TapabrataSikder/wipro_selenium_java_Apr_2026'
+                // Match the exact folder name from your GitHub repository
+                dir('TestNG_Selenium_pract') {
+                    bat 'mvn clean install'
+                }
             }
         }
  
-        stage('Build') {
+        stage('Build Main Project') {
             steps {
                 dir('Cucumber_BBD') {
                     bat 'mvn clean'
@@ -51,7 +55,6 @@ pipeline {
         success {
             echo 'Build Successful'
         }
- 
         failure {
             echo 'Build Failed'
         }
