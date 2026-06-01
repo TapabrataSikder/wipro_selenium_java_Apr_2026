@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/TapabrataSikder/wipro_selenium_java_Apr_2026'
+                    url: 'https://github.com/TapabrataSikder/wipro_selenium_java_Apr_2026/tree/main/Cucumber_BBD'
             }
         }
  
