@@ -61,11 +61,18 @@
     <version>7.34.3</version>
     <scope>compile</scope>
 </dependency>
-		<dependency>
-			<groupId>TestNG_selenium</groupId>
-			<artifactId>Selenium_pract</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.2.5</version>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.2.5</version>
+</dependency>
+		
 		<dependency>
     <groupId>io.rest-assured</groupId>
     <artifactId>rest-assured</artifactId>
