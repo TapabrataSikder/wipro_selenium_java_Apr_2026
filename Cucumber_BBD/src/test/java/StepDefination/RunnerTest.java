@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/resources/features", 
 		glue = {"StepDefination"},
-		tags = "@NinjaEndToEndOnly",
+//		tags = "@NinjaEndToEndOnly",
 		plugin = {
 				"pretty", 
 				"html:target/htmlreports/ninja_report.html"
