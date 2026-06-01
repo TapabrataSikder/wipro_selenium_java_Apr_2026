@@ -6,19 +6,9 @@ pipeline {
     }
  
     stages {
-        // Notice: We completely removed the manual Git checkout stage 
-        // because Jenkins already auto-downloads the whole repository!
+        // We focus strictly on Cucumber_BBD now
 
-        stage('Build Dependency') {
-            steps {
-                // Match the exact folder name from your GitHub repository
-                dir('TestNG_Selenium_pract') {
-                    bat 'mvn clean install'
-                }
-            }
-        }
- 
-        stage('Build Main Project') {
+        stage('Build') {
             steps {
                 dir('Cucumber_BBD') {
                     bat 'mvn clean'
