@@ -2,39 +2,47 @@ pipeline {
     agent any
  
     tools {
-        maven 'Maven3'
+        maven 'Maven_3'
     }
  
     stages {
  
         stage('Checkout') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/TapabrataSikder/wipro_selenium_java_Apr_2026/tree/main/Cucumber_BBD'
+                git branch: 'master',
+                    url: 'https://github.com/TapabrataSikder/wipro_selenium_java_Apr_2026'
             }
         }
  
         stage('Build') {
             steps {
-                bat 'mvn clean'
+                dir('Cucumber_BBD') {
+                    bat 'mvn clean'
+                }
             }
         }
  
         stage('Compile') {
             steps {
-                bat 'mvn compile'
+                dir('Cucumber_BBD') {
+                    bat 'mvn compile'
+                }
             }
         }
  
         stage('Test') {
             steps {
-                bat 'mvn test'
+                dir('Cucumber_BBD') {
+                    bat 'mvn test'
+                }
             }
         }
  
         stage('Package') {
             steps {
-                bat 'mvn package'
+                dir('Cucumber_BBD') {
+                    bat 'mvn package'
+                }
             }
         }
     }
