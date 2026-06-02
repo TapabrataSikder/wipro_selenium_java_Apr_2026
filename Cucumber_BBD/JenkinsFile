@@ -40,7 +40,7 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                bat 'docker build -t cucumber-framework .'
+                bat 'docker build -t cucumber-framework Cucumber_BBD'
             }
         }
 
