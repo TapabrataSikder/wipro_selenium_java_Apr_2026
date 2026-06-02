@@ -12,8 +12,12 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelHandler {
 	public static String getCellData(int rowNum, int colNum) throws IOException {
 	
-	FileInputStream file = new FileInputStream(
-			System.getProperty("user.dir")+"\\TestData\\LoginData.xlsx");
+//	FileInputStream file = new FileInputStream(
+//			System.getProperty("user.dir")+"\\TestData\\LoginData.xlsx");
+		
+		// Replace the hardcoded backslashes with forward slashes
+		FileInputStream file = new FileInputStream(
+		        System.getProperty("user.dir") + "/TestData/LoginData.xlsx");
 	
 	XSSFWorkbook workbook =new XSSFWorkbook(file);
 	XSSFSheet sheet = workbook.getSheet("Sheet1");
