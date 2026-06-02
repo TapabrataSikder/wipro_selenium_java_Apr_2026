@@ -1,6 +1,8 @@
 package StepDefination;
 
 import java.io.IOException;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -25,7 +27,13 @@ public class Ninja_E2E {
     
     @Given("^login page should be open in default browser matching excel workflow$")
     public void login_page_should_be_open_in_default_browser_matching_excel_workflow() throws IOException {
-        driver = new ChromeDriver();
+    	ChromeOptions options = new ChromeOptions();
+    	options.addArguments("--headless=new");          // Run without a GUI
+    	options.addArguments("--no-sandbox");            // Required for Docker
+    	options.addArguments("--disable-dev-shm-usage");
+    	options.addArguments("--remote-allow-origins=*");
+    	
+    	driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.get("https://tutorialsninja.com/demo/");
         
